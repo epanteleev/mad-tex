@@ -1,0 +1,29 @@
+\usepackage{tikz}
+\usepackage{xltxtra}  % Верхние и нижние индексы
+\usepackage{beamerthemesplit} 
+\usepackage{numprint}
+\defbeamertemplate*{footline}{infolines theme}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.6\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.4\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+		\end{beamercolorbox}
+	}%
+	\vskip0pt%
+}
+
+\setbeamertemplate{headline}{}
+
+\setmainfont{Arial}
+\setromanfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\usepackage{multirow} % Сложные таблицы
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subcaption}

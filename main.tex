@@ -1,0 +1,22 @@
+%!TEX TS-program = luatex
+
+\documentclass[a4paper,14pt]{extarticle}
+\input{inc/preamble} 
+
+%%% Начало документа
+\begin{document}
+\includepdf[pagecommand={\pagebreak[0]}]{doc/title.pdf}
+\clearpage
+
+\tableofcontents
+
+\clearpage
+
+\input{inc/1-intro} % Введение
+\include{inc/2-technique}
+\include{inc/3-estimate}
+
+\input{inc/0-bibliography} % Библиографический список
+
+\end{document}
+%%% Конец документа
